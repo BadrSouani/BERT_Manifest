@@ -1,0 +1,39 @@
+<manifest xmlns:
+<uses-sdk android:minSdkVersion=
+android:targetSdkVersion=
+<uses-feature android:
+<uses-permission android:
+<activity android:
+<action android:
+<data android:
+<activity android:
+<service android:
+<category android:
+<meta-data android:
+<receiver android:
+android:
+</activity>
+</receiver>
+</application>
+</manifest>
+<application
+<provider
+</provider>
+<intent-filter>
+</intent-filter>
+package=
+android:versionName=
+android:versionCode=
+android:screenOrientation=
+android:
+exported=
+label=
+name=
+theme=
+value=
+scheme=
+/>
+</
+<
+>
+"

@@ -1,0 +1,14 @@
+FROM tensorflow/tensorflow:latest-gpu
+
+RUN useradd --create-home manifestGetter
+
+USER manifestGetter
+WORKDIR /home/manifestGetter
+VOLUME /BERT_Manifest
+
+COPY req_docker.txt .
+RUN python3 -m pip install --user --no-cache-dir -r req_docker.txt
+
+
+COPY $(pwd)/master_list .
+COPY manifest_getter.py .
